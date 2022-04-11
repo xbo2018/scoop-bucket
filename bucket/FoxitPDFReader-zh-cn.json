@@ -13,8 +13,6 @@
             "$setupfile = (Get-ChildItem \"$dir\" '*.exe' | Select-Object -First 1).FullName",
             "$argument=\"unknown\"",
             "Start-Process -WindowStyle Hidden -Wait -Verb RunAs -FilePath \"$setupfile\" -ArgumentList $argument",
-            "Move-Item \"$dir\\Foxit PDF Reader\\*\" \"$dir\"",
-            "Remove-Item \"$dir\\Foxit PDF Reader\"",
             "Remove-Item \"$setupfile\" -Force"
         ]
     },
@@ -32,10 +30,10 @@
         ]
     },
     "depends": "sudo",
-    "bin":"FoxitPDFReader.exe",
+    "bin":"Foxit PDF Reader\\FoxitPDFReader.exe",
     "shortcuts": [
         [
-            "FoxitPDFReader.exe",
+            "Foxit PDF Reader\\FoxitPDFReader.exe",
             "Foxit PDF Reader"
         ]
     ],

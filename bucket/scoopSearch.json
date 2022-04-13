@@ -1,0 +1,7 @@
+{
+    "homepage":"https://github.com/zhoujin7/scoop-search",
+    "version":"0.2022.04.13",
+    "description":"is a command-line utility that searches the buckets found by scoop-directory. It works with another command-line tool, called crawl-scoop-directory. Created by @zhoujin7.",
+    "url":"https://raw.githubusercontent.com/zhoujin7/scoop-search/master/scoopSearch.ps1",
+    "bin":"scoopSearch.ps1"
+}

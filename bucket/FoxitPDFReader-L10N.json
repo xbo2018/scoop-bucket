@@ -1,0 +1,26 @@
+{
+    "version": "11.2.1.53537",
+    "description": "Fast and feature rich PDF reader that offers a delightful reading experience.multi-language version, including Simplified Chinese version.",
+    "homepage": "https://www.foxit.com/pdf-reader/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.foxit.com/pdf-editor/eula.html"
+    },
+    "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&version=&package_type=&language=zh-CN&distID=",
+    "hash": "0d8530dd92ce5a3ea9b0284b605778ed8bbae01b0d385c0bb1d5287b821cd0f8",
+    "innosetup": true,
+    "bin": "FoxitPDFReader.exe",
+    "shortcuts": [
+        [
+            "FoxitPDFReader.exe",
+            "Foxit PDF Reader"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.foxit.com/pdf-reader/version-history.html",
+        "regex": ">Version ([\\d.]+)</"
+    },
+    "autoupdate": {
+        "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&version=&package_type=&language=zh-CN&distID="
+    }
+}

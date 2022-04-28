@@ -7,7 +7,7 @@
     "hash": "e9f9f81ad0984c96761de41fd8a68a7320ea05d97d9d1d9b794016b3fe150ff5",
     "installer": {
         "script": [
-            "$bucketdir=(Split-Path $app.LocalPath | Split-Path)",
+            "if(!$bucket){$bucketdir=(Split-Path $url | Split-Path)}else{$bucketdir=\"$bucketsdir\\$bucket\"}",
             "$cfgfile=\"$dir\\setting.cfg\"",
             "$value=\"path=$persist_dir\\data\"",
             "$value = $value -replace \"\\\\\",\"\\\\\"",

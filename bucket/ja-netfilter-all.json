@@ -1,5 +1,5 @@
 {
-    "version": "220514",
+    "version": "220521",
     "description": "ja-netfilter all in one",
     "homepage": "https://jetbra.in/s",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://github.com/ja-netfilter/ja-netfilter/blob/master/LICENSE"
     },
     "notes": "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!",
-    "url": "https://pd.zwc365.com/https://jetbra.in/files/ja-netfilter-all-a120cca4048154dbbb827c02613d27c844fde395.zip",
-    "hash": "sha1:a120cca4048154dbbb827c02613d27c844fde395",
+    "url": "https://pd.zwc365.com/https://jetbra.in/files/ja-netfilter-all-0047102be5badbf068c99ce0b1b95ed86060eb69.zip",
+    "hash": "sha1:0047102be5badbf068c99ce0b1b95ed86060eb69",
     "extract_dir": "ja-netfilter-all",
     "checkver": {
         "url": "https://pd.zwc365.com/https://jetbra.in/s",

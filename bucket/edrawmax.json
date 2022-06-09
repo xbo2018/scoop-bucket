@@ -1,10 +1,10 @@
 {
-    "version": "11.6.0",
+    "version": "12.0.0",
     "description": "亿图图示,集两百多种绘图于一身的综合图形图表设计软件，Visio国产替代",
     "homepage": "https://www.edrawsoft.cn/download-edrawmax.html",
     "license": "Shareware",
     "url": "https://cc-download.edrawsoft.cn/origin/edraw-max_cn_full5374.exe",
-    "hash": "1ed16e0afb1026362601ab15b70eb6bdadc63f8fc3656fbeb1227def4b020962",
+    "hash": "95be7125025aafdbfb4f8c59f122a0b3b60c860b8330d353a143e7dc50ea41ef",
     "innosetup": true,
     "bin": "EdrawMax.exe",
     "shortcuts": [

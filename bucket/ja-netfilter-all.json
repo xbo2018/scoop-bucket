@@ -11,13 +11,13 @@
     "hash": "sha1:ea3c36bece9bbdb29cdf2f44b8c807fedcfb287d",
     "extract_dir": "ja-netfilter-all",
     "checkver": {
-        "url": "https://pd.zwc365.com/https://jetbra.in/s",
+        "url": "https://ipfs.io/ipfs/bafybeigcfjpaajecjyohiamwycehko3w6lgan3ku7x353ihpdyr7byca7i/",
         "regex": "ja-netfilter-all-(?<sha1>\\w{40}).zip\" title=\"ja-netfilter all in one\">ja-netfilter-all.zip</a> \\(([\\d.]+)\\)"
     },
     "autoupdate": {
-        "url": "https://pd.zwc365.com/https://jetbra.in/files/ja-netfilter-all-$matchSha1.zip",
+        "url": "https://ipfs.io/ipfs/bafybeigcfjpaajecjyohiamwycehko3w6lgan3ku7x353ihpdyr7byca7i/files/ja-netfilter-all-$matchSha1.zip",
         "hash": {
-            "url": "https://pd.zwc365.com/https://jetbra.in/s",
+            "url": "https://ipfs.io/ipfs/bafybeigcfjpaajecjyohiamwycehko3w6lgan3ku7x353ihpdyr7byca7i/",
             "regex": "ja-netfilter-all-$sha1.zip"
         }
     }

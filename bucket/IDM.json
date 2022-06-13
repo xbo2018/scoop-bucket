@@ -1,5 +1,6 @@
 {
     "version": "6.39",
+    "license":"Unknown",
     "description": "Internet Dowload Manager，能有效提高下载速度,IDM+Onedrive世纪互联+千兆网=100MB/S",
     "homepage": "https://www.423down.com/575.html",
     "depends": "sudo",
@@ -23,10 +24,8 @@
         "若桌面未生成快捷方式,请手动执行应用目录下的bat文件,x",
         ""
     ],
-    "nowait": true,
     "checkver": {
-        "re": "Manager ?([\\d.]+)",
-        "encode": "UTF-8"
+        "re": "Manager ?([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://onedrive.lstheart.tk/d/ScoopSofts/IDM/Inet_Download_Manager_v$version.exe#dl.7z"

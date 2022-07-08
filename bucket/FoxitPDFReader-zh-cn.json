@@ -1,12 +1,12 @@
 {
-    "version": "11.1.126.51346",
+    "version": "11.1.140.51553",
     "description": "福昕PDF阅读器具有完全自主产权的PDF核心技术是一款高效专业安全的阅读器",
     "homepage": "https://www.foxitsoftware.cn/pdf-reader/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.foxitsoftware.cn/pdf-reader/eula.html"
     },
-    "url":"https://file.foxitreader.cn/file/Channel/reader/foxit_GA_NoFinishPage_FoxitInst.exe",
+    "url": "https://file.foxitreader.cn/file/Channel/reader/foxit_GA_NoFinishPage_FoxitInst.exe",
     "installer": {
         "script": [
             "echo version:$version",
@@ -25,12 +25,10 @@
         "Remove-Item \"$env:userprofile\\Desktop\\福昕阅读器.lnk\" -ErrorAction SilentlyContinue"
     ],
     "uninstaller": {
-        "script": [
-            "if(Test-Path -Path \"$dir\\Uninst.exe\" -PathType Leaf) {sudo cmd /c start /Wait \"$dir\\Uninst.exe\" /}"
-        ]
+        "script": "if(Test-Path -Path \"$dir\\Uninst.exe\" -PathType Leaf) {sudo cmd /c start /Wait \"$dir\\Uninst.exe\" /}"
     },
     "depends": "sudo",
-    "bin":"Foxit PDF Reader\\FoxitPDFReader.exe",
+    "bin": "Foxit PDF Reader\\FoxitPDFReader.exe",
     "shortcuts": [
         [
             "Foxit PDF Reader\\FoxitPDFReader.exe",
@@ -42,6 +40,6 @@
         "jsonpath": "$.version[0]"
     },
     "autoupdate": {
-        "url":"https://file.foxitreader.cn/file/Channel/reader/foxit_GA_NoFinishPage_FoxitInst.exe"
+        "url": "https://file.foxitreader.cn/file/Channel/reader/foxit_GA_NoFinishPage_FoxitInst.exe"
     }
 }

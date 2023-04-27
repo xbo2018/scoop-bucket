@@ -7,7 +7,7 @@
         "url": "https://github.com/ja-netfilter/ja-netfilter/blob/master/LICENSE"
     },
     "notes": "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!",
-    "url": "https://video.oneloveipfs.com/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/files/jetbra-1126574a2f82debceb72e7f948eb7d4f616ffddf.zip",
+    "url": "https://gateway.pinata.cloud/ipfs/bafybeiatyghkzrrtodzt3stm652rkrjxndg4hq2ublfdmifk7plg5k5brq/files/jetbra-1126574a2f82debceb72e7f948eb7d4f616ffddf.zip",
     "hash": "d705555d2032ef817414a2e53ea1555baacb51f28ede14eb55839a30a76e4bd6",
     "extract_dir": "jetbra",
     "checkver": {
@@ -36,7 +36,7 @@
             "$matches=(New-Object System.Text.RegularExpressions.Regex('((\\w+)://([^/:]+)(:\\d*)?/(ipfs/)?):hash/')).Matches($page2)",
             "$sha1Uri=''",
             "foreach ($item in $matches) {",
-            "   $target=$item.Groups[1].value+$hash+'/'",
+            "   $target=$item.Groups[1].value+$hash",
             "   debug $target",
             "   if(CheckUri $target){",
             "       $sha1Uri=$target",
@@ -45,13 +45,13 @@
             "}",
             "$page3=$wc.DownloadString($sha1Uri)",
             "$sha1=MatchField $page3 'jetbra-(\\w+).zip'",
-            "$checkver=\"version=\"+$version+\",hash=\"+$hash+\",sha1=\"+$sha1",
+            "$checkver=\"version=\"+$version+\",hash=\"+$hash+\",sha1=\"+$sha1+\",target=\"+$sha1Uri",
             "debug $checkver",
             "return $checkver"
         ],
-        "regex": "version=(?<version>\\d+),hash=(?<hash>\\w+),sha1=(?<sha1>\\w+)"
+        "regex": "version=(?<version>\\d+),hash=(?<hash>\\w+),sha1=(?<sha1>\\w+),target=(?<target>\\S+)"
     },
     "autoupdate": {
-        "url": "https://video.oneloveipfs.com/ipfs/$matchHash/files/jetbra-$matchSha1.zip"
+        "url": "$matchTarget/files/jetbra-$matchSha1.zip"
     }
 }

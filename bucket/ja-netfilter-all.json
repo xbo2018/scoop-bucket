@@ -6,7 +6,10 @@
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/ja-netfilter/ja-netfilter/blob/master/LICENSE"
     },
-    "notes": "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!",
+    "notes": [
+        "Use checkver of scoop tool to update new version,like: iex \"$env:SCOOP\\apps\\scoop\\current\\bin\\checkver.ps1 -app $env:SCOOP\\buckets\\xbo\bucket\\ja-netfilter-all.json -f\"",
+        "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!"
+    ],
     "url": "https://ipfs.io/ipfs/bafybeia4nrbuvpfd6k7lkorzgjw3t6totaoko7gmvq5pyuhl2eloxnfiri/files/jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip",
     "hash": "39de7a0306419aadc8d125d6e20ce7e6b812fe855c7c8b7313e7ba6605844098",
     "extract_dir": "jetbra",

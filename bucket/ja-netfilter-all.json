@@ -1,5 +1,5 @@
 {
-    "version": "230914",
+    "version": "240218",
     "description": "ja-netfilter all in one",
     "homepage": "https://jetbra.in/s",
     "license": {
@@ -10,7 +10,7 @@
         "Use checkver of scoop tool to update new version,like: iex \"$env:SCOOP\\apps\\scoop\\current\\bin\\checkver.ps1 -app $env:SCOOP\\buckets\\xbo\bucket\\ja-netfilter-all.json -f\"",
         "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!"
     ],
-    "url": "https://ipfs.io/ipfs/bafybeia4nrbuvpfd6k7lkorzgjw3t6totaoko7gmvq5pyuhl2eloxnfiri/files/jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip",
+    "url": "https://ipfs.io/ipfs/bafybeiawsvnhqx5o2aqa37pvq7brlk7vqj2cpty3b5xac655bxbpqbpkq4/files/jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip",
     "hash": "39de7a0306419aadc8d125d6e20ce7e6b812fe855c7c8b7313e7ba6605844098",
     "extract_dir": "jetbra",
     "checkver": {

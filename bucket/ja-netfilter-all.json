@@ -7,7 +7,7 @@
         "url": "https://github.com/ja-netfilter/ja-netfilter/blob/master/LICENSE"
     },
     "notes": [
-        "Use checkver of scoop tool to update new version,like: iex \"$env:SCOOP\\apps\\scoop\\current\\bin\\checkver.ps1 -app $env:SCOOP\\buckets\\xbo\bucket\\ja-netfilter-all.json -f\"",
+        "Use checkver of scoop tool to update new version,like: iex \"$env:SCOOP\\apps\\scoop\\current\\bin\\checkver.ps1 -app $env:SCOOP\\buckets\\xbo\\bucket\\ja-netfilter-all.json -f\"",
         "Configure as described in \"$dir\\readme.txt\"! For testing purposes only, not for commercial use!"
     ],
     "url": "https://ipfs.io/ipfs/bafybeiawsvnhqx5o2aqa37pvq7brlk7vqj2cpty3b5xac655bxbpqbpkq4/files/jetbra-ded4f9dc4fcb60294b21669dafa90330f2713ce4.zip",

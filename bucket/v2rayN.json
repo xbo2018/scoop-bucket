@@ -1,5 +1,5 @@
 {
-    "version": "7.0.9",
+    "version": "7.1.3",
     "description": "A V2Ray client for Windows, support Xray & v2fly core",
     "homepage": "https://github.com/2dust/v2rayN",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     "pre_install": [
         "$directoryPath=\"$dir\\bin\\Xray\"",
         "if (-Not (Test-Path -Path $directoryPath)) {",
-            "New-Item -ItemType Directory -Path $directoryPath | Out-Null",
-            "Write-Output \"Directory created: $directoryPath\"",
+        "New-Item -ItemType Directory -Path $directoryPath | Out-Null",
+        "Write-Output \"Directory created: $directoryPath\"",
         "}",
         "foreach ($form in @('*.exe')) {",
         "    foreach ($_ in Get-ChildItem \"$(appdir xray $global)\\current\" -File) {",
@@ -35,8 +35,8 @@
     "checkver": "github",
     "architecture": {
         "64bit": {
-            "url": "https://ghp.ci/https://github.com/2dust/v2rayN/releases/download/7.0.9/v2rayN-windows-64.zip",
-            "hash": "3fb6de200616953665d0d344662456114778d80dd6597efe51b2762f1e21c9a4",
+            "url": "https://ghp.ci/https://github.com/2dust/v2rayN/releases/download/7.1.3/v2rayN-windows-64.zip",
+            "hash": "0b767bcb0815d19a24efed7fdc3a62a257ca8a3e74e069bb7e1ed68e9755231a",
             "extract_dir": "v2rayN-windows-64"
         }
     },

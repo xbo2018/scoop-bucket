@@ -1,0 +1,42 @@
+{
+    "version": "2023.9.250",
+    "description": "RaiDrive. Conveniently manage all your cloud services as a network drive using the standard file explorer.",
+    "homepage": "https://www.raidrive.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.raidrive.com/about/terms"
+    },
+    "changelog": "https://www.raidrive.com/update",
+    "architecture": {
+        "64bit": {
+            "url": "https://app.raidrive.com/download/raidrive/release/RaiDrive_2023.9.250_x64.msi",
+            "hash": "b0e5d6c5cd1571064e4767d6b00efbab77f6e9377700f86afb7c4286cd7a4fc0"
+        },
+        "arm64": {
+            "url": "https://app.raidrive.com/download/raidrive/release/RaiDrive_2023.9.250_arm64.msi",
+            "hash": "74cc9ed5ba8852a4adf96c12942ab232a6815a222551eba1595db979c5bac08e"
+        }
+    },
+    "##": "https://www.advancedinstaller.com/user-guide/exe-setup-file.html",
+    "bin": "raidrive.exe",
+    "shortcuts": [
+        [
+            "raidrive.exe",
+            "RaiDrive"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.raidrive.com/update",
+        "regex": "RaiDrive</span> <span class=\"fw-bold\">([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://app.raidrive.com/download/raidrive/release/RaiDrive_$version_x64.msi"
+            },
+            "arm64": {
+                "url": "https://app.raidrive.com/download/raidrive/release/RaiDrive_$version_arm64.msi"
+            }
+        }
+    }
+}

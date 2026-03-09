@@ -1,0 +1,23 @@
+{
+    "version": "1.4.1",
+    "description": "A graphical Hyper-V management tool that allows mere mortals to easily master advanced Hyper-V features.",
+    "homepage": "https://github.com/Justsenger/ExHyperV/",
+    "license": "GPLv3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Justsenger/ExHyperV/releases/download/1.4.1/1.4.1.zip",
+            "hash": "93eb79668bb85a39ccdfbb7ac6a051461f5e40e5fc93bb6e9bf9f423bfcc1eda",
+            "extract_dir": ""
+        }
+    },
+    "bin": "ExHyperV.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Justsenger/ExHyperV/releases/download/$version/$version.zip",
+                "extract_dir": ""
+            }
+        }
+    }
+}
